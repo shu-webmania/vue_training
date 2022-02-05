@@ -1,11 +1,13 @@
 new Vue({
   el: "#app",
   data: {
-    message: "Hello World",
-  },
-  methods: {
-    reverseMessage: function () {
-      this.message = this.message.split("").reverse().join("");
+    url: "https://google.com",
+    urlTwitter: "https://twitter.com",
+    attribute: "href",
+    number: 31,
+    twitterObject: {
+      href: "https://twitter.com",
+      id: 31,
     },
   },
 });

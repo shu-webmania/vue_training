@@ -9,9 +9,14 @@
   </head>
   <body>
     <div id="app">
-      <p>{{ message }}</p>
-      <button v-on:click="reverseMessage">メッセージ反転</button>
+      <div>{{ html }}</div>
+      <a v-bind:href="url">Google</a>
+      <a :[attribute]="url">Google</a>
+      <a :href="urlTwitter" :id="number">Twitter</a>
+      <a v-bind="{href : urlTwitter, id : number}">Twitter</a>
+      <a v-bind="twitterObject">Twitter</a>
     </div>
-    <script src="vue.js"></script>
+
+    <script src="script.js"></script>
   </body>
 </html>
