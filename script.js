@@ -1,14 +1,26 @@
 new Vue({
   el: "#app",
   data: {
-    url: "https://google.com",
-    urlTwitter: "https://twitter.com",
-    attribute: "href",
-    number: 31,
-    number: 31,
-    twitterObject: {
-      href: "https://twitter.com",
-      id: 31,
+    number: 0,
+    x: 0,
+    y: 0,
+  },
+  methods: {
+    countUp: function (times) {
+      this.number += 1 * times;
+    },
+    changeMousePositon: function (divideNumber, event) {
+      this.x = event.clientX / divideNumber;
+      this.y = event.clientY / divideNumber;
+    },
+    // noEvent: function (event) {
+    //   event.stopPropagation();
+    // },
+    // noEvent: function (event) {
+    //   event.preventDefault();
+    // },
+    myAlert: function () {
+      alert("アラート");
     },
   },
 });
