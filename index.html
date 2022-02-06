@@ -9,8 +9,8 @@
   </head>
   <body>
     <div id="app">
-      <p>現在{{ number }}回クリックされてる</p>
-      <button @click="countUp">カウントアップ</button>
+      <input type="text" v-model="message" />
+      <h1>{{ message }}</h1>
     </div>
 
     <script src="script.js"></script>
