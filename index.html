@@ -10,14 +10,7 @@
   <body>
     <div id="app">
       <p>現在{{ number }}回クリックされてる</p>
-      <button v-on:click="countUp(2)">カウントアップ</button>
-      <p v-on:mousemove="changeMousePositon(1, $event)">
-        マウスのせてください
-        <span v-on:mousemove.stop.prevnt>反応しないでください</span>
-      </p>
-      <a v-on:click.prevent.stop href="https://google.com">Google</a>
-      <p>X:{{ x }} Y:{{ y }}</p>
-      <input type="text" v-on:keyUp.space.enter="myAlert" />
+      <button @click="countUp">カウントアップ</button>
     </div>
 
     <script src="script.js"></script>
