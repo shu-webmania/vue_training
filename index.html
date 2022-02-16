@@ -9,13 +9,19 @@
   </head>
   <body>
     <div id="app">
-      <p>{{ counter }}</p>
-      <button @click="countUp">+1</button>
-      <button @click="countUp()">+1</button>
-      <p>{{ doubleCounterComputed }}</p>
-      <p>{{ doubleCounterMethod() }}</p>
+      <h1 v-bind:class="classObject">Hello</h1>
+      <button @click="isActive = !isActive">切り替え</button>
     </div>
 
     <script src="script.js"></script>
   </body>
 </html>
+
+<style>
+  .red {
+    color: red;
+  }
+  .bg-blue {
+    background-color: blue;
+  }
+</style>
