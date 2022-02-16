@@ -4,16 +4,16 @@ new Vue({
     counter: 0,
   },
   computed: {
-    lessThanThree: function () {
-      return this.counter > 3 ? "3以上" : "3以下";
+    doubleCounterComputed: function () {
+      return this.counter * 2;
     },
   },
-  watch: {
-    counter: function () {
-      var vm = this;
-      setTimeout(function () {
-        vm.counter = 0;
-      }, 3000);
+  methods: {
+    countUp: function () {
+      this.counter += 1;
+    },
+    doubleCounterMethod: function () {
+      return this.counter * 2;
     },
   },
 });

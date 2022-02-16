@@ -10,8 +10,10 @@
   <body>
     <div id="app">
       <p>{{ counter }}</p>
-      <button @click="counter += 1">+1</button>
-      <p>{{ lessThanThree }}</p>
+      <button @click="countUp">+1</button>
+      <button @click="countUp()">+1</button>
+      <p>{{ doubleCounterComputed }}</p>
+      <p>{{ doubleCounterMethod() }}</p>
     </div>
 
     <script src="script.js"></script>
