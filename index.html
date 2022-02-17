@@ -11,6 +11,7 @@
     <div id="app">
       <h1 v-bind:class="classObject">Hello</h1>
       <button @click="isActive = !isActive">切り替え</button>
+      <h1 :class="[{red: isActive},bg]">Hellow</h1>
     </div>
 
     <script src="script.js"></script>
