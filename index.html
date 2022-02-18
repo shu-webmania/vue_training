@@ -9,20 +9,9 @@
   </head>
   <body>
     <div id="app">
-      <h1 v-bind:class="classObject">Hello</h1>
-      <button @click="isActive = !isActive">切り替え</button>
-      <h1 :class="[{red: isActive},bg]">Hellow</h1>
+      <h1 :style="styleObject">Hellow</h1>
     </div>
 
     <script src="script.js"></script>
   </body>
 </html>
-
-<style>
-  .red {
-    color: red;
-  }
-  .bg-blue {
-    background-color: blue;
-  }
-</style>
