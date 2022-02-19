@@ -5,5 +5,8 @@ new Vue({
       color: "red",
       "background-color": "blue",
     },
+    baseStyles: {
+      fontSize: "100px",
+    },
   },
 });
