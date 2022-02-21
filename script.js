@@ -1,12 +1,7 @@
 new Vue({
   el: "#app",
   data: {
-    styleObject: {
-      color: "red",
-      "background-color": "blue",
-    },
-    baseStyles: {
-      fontSize: "100px",
-    },
+    ok: true,
+    maybeOk: true,
   },
 });
