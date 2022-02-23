@@ -9,9 +9,12 @@
   </head>
   <body>
     <div id="app">
-      <button @click="ok = !ok">ボタン</button>
-      <p v-if="ok">IF</p>
-      <p v-show="ok">Show</p>
+      <ul>
+        <li v-for="(fruit,index) in fruits">{{index}}{{fruit}}</li>
+      </ul>
+      <ul>
+        <li v-for="value in object">{{value}}</li>
+      </ul>
     </div>
     <script src="script.js"></script>
   </body>
