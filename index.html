@@ -9,12 +9,9 @@
   </head>
   <body>
     <div id="app">
-      <template v-if="ok">
-        <p>Hello</p>
-        <p>GB</p>
-        <p>おはよう</p>
-      </template>
       <button @click="ok = !ok">ボタン</button>
+      <p v-if="ok">IF</p>
+      <p v-show="ok">Show</p>
     </div>
     <script src="script.js"></script>
   </body>
